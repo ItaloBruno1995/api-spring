@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.springcurso.domain.enums.RequestState;
+import com.springcurso.domain.enums.Role;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -19,13 +20,17 @@ public class User {
 	private String name;
 	private String email;
 	private String password;
+	
+	//USUARIO TEM U ROLE
+	private Role role;
+	
+	
 	//USUARIO TEM UM LISTA DE PEDIDO:
 	private List<Request> requests = new ArrayList<Request>();
-	//UM USUARIO TEM UMA LISTA DE ESTAGIO
+	//UM USUARIO TEM UMA LISTA DE ESTAGIO:
 	private List<RequestState> states = new ArrayList<RequestState>();
 	
-	
-	
+
 	
 
 
